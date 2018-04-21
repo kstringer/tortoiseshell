@@ -1,0 +1,210 @@
+html {
+  font-size: 18px;
+}
+body {
+  line-height: 1.4rem;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner {
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+header {
+  color: white;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.company {
+  display: flex;
+  align-items: center;
+}
+.company img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+nav span {
+  padding-right: 2rem;
+}
+.small {
+  display: none;
+}
+
+.bannerText {
+  margin-top: 10rem;
+  padding-top: 1.5rem;
+  text-align: right;
+}
+.bannerText span{
+  background-color: white;
+  padding: 1.5rem 5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  margin-right: -2rem
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.service {
+  height: 8rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;;
+}
+.serviceImage img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.exams .serviceImage  {
+  width: 3.5rem;
+}
+.fittings {
+  margin: 0 6rem;
+}
+.fittings .serviceImage {
+  width: 5rem;
+}
+.delivery .serviceImage {
+  width: 5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.philosophy, .appointment {
+  width: 35%;
+  margin-right: 5%;
+  text-align: left;
+}
+.philosophy h3, .appointment h3 {
+  background: cadetblue;
+  color: white;
+  width: 10rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.copyright img {
+  margin-left: 4rem;
+  margin-right: 1rem;
+  height: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner {
+    padding-top: 0;
+    height: 22rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .bannerText {
+    margin-top: 5rem;
+    padding-top: .75rem;
+  }
+  .bannerText span{
+    padding: .75rem 4rem;
+    font-size: 1.33rem;
+    margin-right: 2rem
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .big {
+    display: none;
+  }
+  .company span {
+    display: none;
+  }
+  .small {
+    display: inline;
+  }
+  .banner {
+    background-position: 20%;
+    height: 17rem;
+    margin-bottom: 3.77rem;
+  }
+  .bannerText {
+    margin-top: 9rem;
+    padding-top: .75rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .bannerText span{
+    padding: .75rem 0;
+    display: block;
+    margin: 0;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    font-size: .77rem;
+  }
+  .service {
+    margin-bottom: 1.54rem;
+    justify-content: normal;
+    height: auto;
+  }
+  .info {
+    margin-top: 3.77rem;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .info span {
+    font-size: .77rem;
+  }
+
+  .philosophy, .appointment {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .philosophy h3, .appointment h3 {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .copyright img{
+    margin: 0 auto;
+  }
+  footer span {
+    display: none;
+  }
+
+}
